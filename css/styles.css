@@ -1,7 +1,4 @@
-/* =========================
-   SECTION: Style Reset
-   Description: Resets any default styleing from browser to 0
-   ========================= */
+/* ===== RESET ===== */
 
 * {
     padding: 0;
@@ -9,60 +6,48 @@
     box-sizing: border-box;
 }
 
-
-
-/* =========================
-   SECTION: Body Section
-   Description: Used to set up website color pallete
-   ========================= */
+/* ===== GLOBAL ===== */
 
 body{
     background-image: url(../images/nnnoise.svg);
     opacity: 0.8;
     background-color: rgb(16, 17, 18);
     color: white;
-}
-
-/* =========================
-   SECTION: Nav Section
-   Description: Used for site navigation
-   ========================= */
-
-.nav-box {
     display: flex;
     justify-content: center;
+    height: 100dvh;
 }
+
+.width {
+    max-width: 60ch;
+}
+
+/* ===== NAVBAR ===== */
 
 nav{
     background-color: rgb(39, 40, 41);
-    top: 30px;
-    width: 346px;
-    height: 48px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 12px;
+    width: 21.625em;
+    height: 3em;
+    border-radius: 0.75em;
     display: flex;
     align-items: center;
-    
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
 nav li {
-    border-radius: 6px;
-    height: 36px;
-    width: 36px;
+    border-radius: 0.375em;
+    height: 2.25em;
+    width: 2.25em;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 nav li:hover {
@@ -70,187 +55,7 @@ nav li:hover {
 }
 
 nav img {
-    height: 20px;
-    width: 20px;
+    height: 1.25em;
+    width: 1.25em;
 }
 
-/* =========================
-   SECTION: Flex
-   Description: Layout of webpage
-   ========================= */
-
-   .main-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-   }
-   .main {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    gap: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
-    flex-wrap: wrap;
-
-   }
-
-/* =========================
-   SECTION: Portrait
-   Description: Photo and quick links
-   ========================= */
-
-aside {
-    background-color: rgb(39, 40, 41);
-    border-radius: 12px;
-    padding: 30px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 585px;
-    position: sticky;
-    top: 20px;
-}
-
-aside p {
-    margin-bottom: 8px;
-    font-family: Orbitron;
-}
-
-aside .name {
-    font-weight: bold;
-    font-size: 30px;
-    font-family: 'Space Grotesk';
-}
-
-aside img {
-    height: 280px;
-    width: 240px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-}
-
-aside ul {
-    list-style: none;
-    display: flex;
-    margin-bottom: 50px;
-
-}
-
-aside a {
-    background-color: #FF1A1A;
-    padding: 15px 50px;
-    border-radius: 12px;
-}
-
-aside a:hover {
-    background-color: #E51717;
-    cursor: pointer;
-}
-
-/* =========================
-   SECTION: About Me
-   Description: Used for quick at a glance info about me
-   ========================= */
-
-   main {
-    width: 40%;
-   }
-
-   .aboutme {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin-bottom: 135px;
-   }
-
-   .aboutme h1 {
-    font-size: 68px;
-    font-family: 'Playfair Display';
-    
-   }
-
-   h1 .Hero {
-    font-size: 68px;
-    color:#FF1A1A
-   }
-
-   .aboutme p {
-    font-family: Orbitron;
-   }
-
-   .num-box {
-    display: flex;
-    justify-content: space-between;
-   }
-
-   .num-box p {
-    text-transform: uppercase;
-   }
-
-   .number {
-    font-size: 70px;
-   }
-
-   .aboutme a {
-    background-color: #FF1A1A;
-    padding: 15px 50px;
-    border-radius: 12px;
-   }
-
-   .aboutme a:hover {
-    background-color: #E51717;
-    cursor: pointer;
-   }
-
-   .links {
-    display: flex;
-    gap: 15px;
-    
-   }
-
-   .my-work {
-    display: flex;
-    align-items: center;
-   }
-
-   .my-work:hover {
-    color:#E51717 ;
-    cursor: pointer;
-   }
-
-   .projects {
-    margin-top: 135px;
-   }
-
-   .projects h1 {
-    font-size: 68px;
-    font-family: 'Playfair Display';
-    
-   }
-
-   .project-grid img {
-    width: 318px;
-    height: 200px;
-    border-radius: 12px;
-   }
-
-   figure {
-    background-image: url(https://images.squarespace-cdn.com/content/v1/642fe9d50ff3d476932fc101/d244efba-b663-4e4d-9a01-2c1920f282d7/gunbuster);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 302px;
-    width: 318px;
-    display: flex;
-    flex-flow: column;
-   }
-
-   figcaption {
-    background-color: #222222;
-    color: white;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-   }
