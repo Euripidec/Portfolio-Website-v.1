@@ -14,7 +14,9 @@ body{
     background-color: rgb(16, 17, 18);
     color: white;
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
     height: 100dvh;
 }
 
@@ -22,15 +24,45 @@ body{
     max-width: 60ch;
 }
 
+html {
+    font-size: 100%;
+}
+
+.hero {
+    color: #FF1A1A;
+}
+
+.section {
+    margin-bottom: 12.5rem;
+    width: 100%;
+}
+
+/* ===== WEBSITE LAYOUT ===== */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.layout {
+    display: flex;
+    gap: 5rem;
+}
+
 /* ===== NAVBAR ===== */
 
 nav{
     background-color: rgb(39, 40, 41);
     width: 21.625em;
-    height: 3em;
-    border-radius: 0.75em;
+    height: 3rem;
+    border-radius: 0.75rem;
     display: flex;
     align-items: center;
+    margin: 3.125rem 6.25rem;
 }
 
 nav ul {
@@ -59,3 +91,162 @@ nav img {
     width: 1.25em;
 }
 
+
+
+/* ===== PORTRAIT ===== */
+
+.portrait {
+    background-color: rgb(39, 40, 41);
+    height: 40rem;
+    width: 21.5rem;
+    border-radius: 0.75rem;
+    padding: 1.875rem 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 9.375rem;
+}
+
+.portrait img {
+    height: 17.5em;
+    width: 15em;
+    border-radius: 0.75rem;
+    
+}
+
+.portrait .name {
+    font-weight: bold;
+    font-size: 1.875em;
+    font-family: 'Space Grotesk';
+}
+
+.portrait p {
+    margin-bottom: 0.5rem;
+    font-family: Orbitron;
+    text-align: center;
+}
+
+.portrait ul {
+    list-style: none;
+    display: flex;
+}
+
+.portrait a {
+    background-color: #FF1A1A;
+    padding: 0.9375rem 3.125rem;
+    border-radius: 0.75rem;
+}
+
+.portrait a:hover {
+    background-color: #E51717;
+    cursor: pointer;
+}
+
+/* ===== ABOUT ME ===== */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 80ch;
+    height: 40rem;
+   }
+
+.about-me h1 {
+    font-size: 4.25em;
+    font-family: 'Playfair Display';
+   }
+
+.about-me p {
+    font-family: Orbitron;
+   }
+
+.num-box {
+    display: flex;
+    justify-content: space-between;
+   }
+
+.num-box p {
+    text-transform: uppercase;
+   }
+
+.number {
+    font-size: 4.375em;
+   }
+
+.links {
+    display: flex;
+    gap: 0.9375rem;
+    
+   }
+
+.about-me a {
+    background-color: #FF1A1A;
+    padding: 0.9375rem 3.125rem;
+    border-radius: 0.75rem;
+   }
+
+.about-me a:hover {
+    background-color: #E51717;
+    cursor: pointer;
+   }
+
+.my-work {
+    display: flex;
+    align-items: center;
+   }
+
+.my-work:hover {
+    color:#E51717 ;
+    cursor: pointer;
+   }
+
+/* ===== PROJECTS ===== */
+
+
+.projects h1 {
+    font-size: 3.625rem;
+    font-family: 'Playfair Display';
+    margin-bottom: 1.25rem;
+    
+}
+   
+.card {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/642fe9d50ff3d476932fc101/d244efba-b663-4e4d-9a01-2c1920f282d7/gunbuster);
+    background-position: center;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.caption {
+    background-color: rgb(39, 40, 41);
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    padding: 1.25rem 1rem;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 19.875rem);
+    grid-template-rows: repeat(2, 19.875rem);
+    gap: 1.25rem
+}
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+    
