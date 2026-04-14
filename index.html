@@ -6,45 +6,95 @@
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap"
     rel="stylesheet"
   />
-  <script src="./js/script.js"></script>
+  <script defer src="./js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
   <!-- ===== NAVBAR ===== -->
-  <nav>
+  <nav class="drop-in">
     <ul>
-      <li><img src="./images/Home.png" /></li>
-      <li><img src="./images/Projects.png" /></li>
-      <li><img src="./images/Tools.png" /></li>
-      <li><img src="./images/Experience.png" /></li>
-      <li><img src="./images/Thoughts.png" /></li>
-      <li><img src="./images/Contact.png" /></li>
+      <li>
+        <a href="#about-me"><img src="./images/Home.png" /><span>Home</span></a>
+      </li>
+      <li>
+        <a href="#projects"
+          ><img src="./images/Projects.png" /><span>Projects</span></a
+        >
+      </li>
+      <li>
+        <a href="#toolsntech"
+          ><img src="./images/Tools.png" /><span>Tools</span></a
+        >
+      </li>
+      <li>
+        <a href="#blog"><img src="./images/Thoughts.png" /><span>Blog</span></a>
+      </li>
+      <li>
+        <a href="#faq"><img src="./images/Faq.png" /><span>FAQ</span></a>
+      </li>
+      <li>
+        <a href="contact.html"
+          ><img src="./images/Contact.png" /><span>Contact</span></a
+        >
+      </li>
     </ul>
   </nav>
   <!-- ===== PORTRAIT ===== -->
-  <div class="layout">
-    <div class="portrait">
+  <div class="layout .overflow-hidden">
+    <div class="portrait drop-in">
       <img src="./images/Portrait.jpg" />
-      <p class="name">Euripide Carpio</p>
-      <p>Full Stack Website Developer</p>
-      <p>Santo Domingo,Dominican Republic</p>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-      </ul>
-      <a>Let's Talk</a>
+      <div class="bio-container">
+        <div class="bio">
+          <div class="bio-info">
+            <p class="name">Euripide Carpio</p>
+            <p>Full Stack Website Developer</p>
+            <p>Santo Domingo,Dominican Republic</p>
+          </div>
+          <div class="links-potrait">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/euripide-carpio-63a386152/"
+                  target="_blank"
+                  ><img src="./images/Linked In.svg"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/Euripidec" target="_blank"
+                  ><img src="./images/Github.svg"
+                /></a>
+              </li>
+              <li>
+                <a href="https://wa.me/8293876773" target="_blank"
+                  ><img src="./images/Whatsapp.svg"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/superboirose/"
+                  target="_blank"
+                  ><img src="./images/Instagram.svg"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="contact.html" class="button">Let's Talk !</a>
+      </div>
     </div>
 
     <main>
       <!-- ===== ABOUT ME ===== -->
       <section class="about-me section">
-        <h1>Transforming Your Ideas Into <span class="hero">Reality</span></h1>
-        <p>
-          Passionate about creating intuitive and engaging user experiences.
-          Specialize in transforming ideas into beautifully crafted products.
+        <h1 id="about-me" class="drop-in">
+          Codeing the Future, One Line at a <span class="hero">Time</span>
+        </h1>
+        <p class="drop-in-2">
+          Embark on a transformative journey through captivating digital realms
+          with the enigmatic "Digital Alchemist," transcending code's
+          boundaries.
         </p>
-        <div class="num-box">
+        <div class="num-box drop-in-3">
           <div class="box1">
             <p class="number">+1</p>
             <p>Learning Web Development</p>
@@ -58,52 +108,83 @@
             <p>Github Repositories</p>
           </div>
         </div>
-        <div class="links">
-          <a>Let's Talk</a>
+        <div class="links drop-in-4">
+          <a href="contact.html" class="button button1">Let's Talk !</a>
           <div class="my-work">
-            <p>My Work</p>
-            <img src="./images/Arrow.png" />
+            <a href="#projects"><p>My Work</p></a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+              />
+            </svg>
           </div>
         </div>
       </section>
       <!-- ===== PROJECTS ===== -->
-      <section class="projects section">
-        <h1>
+      <section class="projects section hidden">
+        <h1 id="projects">
           Recent Projects <br />
           & <span class="hero">Achievements</span>
         </h1>
-        <div class="project-grid">
-          <div class="card item-1">
-            <div class="caption">
-              <h3>Lorem</h3>
-              <p>Ipsum</p>
-            </div>
-          </div>
-          <div class="card item-2">
-            <div class="caption">
-              <h3>Lorem</h3>
-              <p>Ipsum</p>
-            </div>
-          </div>
-          <div class="card item-3">
-            <div class="caption">
-              <h3>Lorem</h3>
-              <p>Ipsum</p>
-            </div>
-          </div>
-          <div class="card item-4">
-            <div class="caption">
-              <h3>Lorem</h3>
-              <p>Ipsum</p>
-            </div>
-          </div>
+        <div class="container">
+          <a href="https://euripidec.github.io/Tea-Cozy/" target="_blank">
+              <div class="card item-1 hidden">
+                <img src="./images/Tea Cozy.png" />
+                <div class="caption">
+                  <span class="title">
+                    <h3>Tea Cozy</h3>
+                  </span>
+                  <p>A responsive Landing page for a fictional tea shop</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://euripidec.github.io/Arachne-HomePage/" target="_blank">
+              <div class="card item-2 hidden">
+                <img src="./images/Arachne.png" />
+                <div class="caption">
+                  <span class="title">
+                    <h3>Arachne Homepage</h3>
+                  </span>
+                  <p>A dark, atmospheric fan site inspired by the world of Marathon (Bungie)</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://euripidec.github.io/Number-Guesser/" target="_blank">
+              <div class="card item-3 hidden">
+                <img src="./images/NumberGuesser.png" />
+                <div class="caption">
+                  <span class="title">
+                    <h3>Number Guesser</h3>
+                  </span>
+                  <p>A browser-based guessing game</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/Euripidec/Credit-card-checker" target="_blank">
+              <div class="card item-4 hidden">
+                <img src="./images/credit card checker.webp" />
+                <div class="caption">
+                  <span class="title">
+                    <h3>CC Cheker</h3>
+                  </span>
+                  <p>A JavaScript program that validates credit card numbers</p>
+                </div>
+              </div>
+            </a>
         </div>
       </section>
       <!-- ===== TOOLS ===== -->
-      <section class="toolsntech section">
-        <h1>Tools & <span class="hero">Technologies</span></h1>
+      <section class="toolsntech section hidden">
+        <h1 id="toolsntech">Tools & <span class="hero">Technologies</span></h1>
         <div class="tool-grid">
-          <div class="tool-card">
+          <a href="https://react.dev/" target="_blank">
+             <div class="tool-card hidden">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
             />
@@ -112,7 +193,9 @@
               <p>UI Library</p>
             </div>
           </div>
-          <div class="tool-card">
+          </a>
+          <a href="https://angular.dev/" target="_blank">
+             <div class="tool-card hidden">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
             />
@@ -121,7 +204,9 @@
               <p>Web Framework</p>
             </div>
           </div>
-          <div class="tool-card">
+          </a>
+          <a href="https://nodejs.org/en" target="_blank">
+            <div class="tool-card hidden">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
             />
@@ -130,7 +215,9 @@
               <p>JavaScript Runtime</p>
             </div>
           </div>
-          <div class="tool-card">
+          </a>
+          <a href="https://git-scm.com/" target="_blank">
+            <div class="tool-card hidden">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
             />
@@ -139,7 +226,9 @@
               <p>Version Control</p>
             </div>
           </div>
-          <div class="tool-card">
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <div class="tool-card hidden">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
             />
@@ -148,7 +237,9 @@
               <p>Code Hosting</p>
             </div>
           </div>
-          <div class="tool-card">
+          </a>
+          <a href="https://www.typescriptlang.org/" target="_blank">
+            <div class="tool-card hidden">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
             />
@@ -158,92 +249,273 @@
             </div>
           </div>
         </div>
+          </a>
       </section>
       <!-- ===== QUOTES THAT INSPIRE ME  ===== -->
-      <section class="quotes section">
-        <h1 class="header">Quotes That <span class="hero">Inspire Me</span></h1>
-        <div class="quote-card">
-          <div>
-            <img src="./images/Haruko.png" />
-            <h6>Haruko Haruhara</h6>
+      <section class="quotes section hidden">
+        <h1 class="header" id="quotes">
+          Quotes That <span class="hero">Inspire Me</span>
+        </h1>
+        <div class="slider">
+          <div class="slides">
+            <div class="quote-card">
+              <div>
+                <img src="./images/Haruko.png" />
+                <h6>Haruko Haruhara <span>- FLCL</span></h6>
+              </div>
+              <p>It takes an idiot to do cool things. That's why it's cool.</p>
+            </div>
+            <div class="quote-card">
+              <div>
+                <img src="./images/Naota.jpg" />
+                <h6>Naota Nandaba <span>- FLCL</span></h6>
+              </div>
+              <p>
+                Nothing amazing happens here. And you get used to that, used to
+                a world where everything is ordinary. Every day we spend here is
+                like a whole lifetime of dying slowly.
+              </p>
+            </div>
+            <div class="quote-card">
+              <div>
+                <img src="./images/Amarao.jpg" />
+                <h6>Commander Amarao <span>- FLCL</span></h6>
+              </div>
+              <p>When it comes down to it, there are very few people who will swing the bat.</p>
+            </div>
+            <div class="quote-card">
+              <div>
+                <img src="./images/Noriko.webp" />
+                <h6>Noriko Takaya <span>- Gunbuster</span></h6>
+              </div>
+              <p>No more crying, no more weakness, I'm going to protect them all!</p>
+            </div>
+            <div class="quote-card">
+              <div>
+                <img src="./images/Coach.jpg" />
+                <h6>Koichiro Oota <span>- Gunbuster</span></h6>
+              </div>
+              <p>Saving the Earth with hard work and guts! A miracle will happen — we'll make it happen!</p>
+            </div>
+            <div class="quote-card">
+              <div>
+                <img src="./images/Nono.png" />
+                <h6>Nono<span>- Diebuster</span></h6>
+              </div>
+              <p>A true buster machine pilot, has a buster machine in their heart!</p>
+            </div>
           </div>
-          <p>It takes an idiot to do cool things. That's why it's cool.</p>
+          <div class="boton hidden">
+            <svg
+              class="next"
+              onclick="nextSlide()"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+              />
+            </svg>
+            <svg
+              class="prev"
+              onclick="prevSlide()"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+              />
+            </svg>
+          </div>
         </div>
       </section>
       <!-- ===== BLOG ===== -->
-      <section class="blog section">
-        <h1 class="header">
+      <section class="blog section hidden">
+        <h1 class="header" id="blog">
           Thoughts <br />
           & <span class="hero">Ideas</span>
         </h1>
-        <div class="project-grid">
-          <div class="card item-1">
-            <div class="caption">
-              <h3>Lorem</h3>
-              <p>Ipsum</p>
-            </div>
-          </div>
-          <div class="card item-2">
-            <div class="caption">
-              <h3>Lorem</h3>
-              <p>Ipsum</p>
-            </div>
-          </div>
-          <div class="card item-3">
-            <div class="caption">
-              <h3>Lorem</h3>
-              <p>Ipsum</p>
-            </div>
-          </div>
-          <div class="card item-4">
-            <div class="caption">
-              <h3>Lorem</h3>
-              <p>Ipsum</p>
-            </div>
-          </div>
+        <div class="container">
+          <a href="https://euripidec.github.io/Tea-Cozy/" target="_blank">
+              <div class="card item-1 hidden">
+                <img src="./images/Tea Cozy.png" />
+                <div class="caption">
+                  <span class="title">
+                    <h3>Tea Cozy</h3>
+                  </span>
+                  <p>A responsive Landing page for a fictional tea shop</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://euripidec.github.io/Arachne-HomePage/" target="_blank">
+              <div class="card item-2 hidden">
+                <img src="./images/Arachne.png" />
+                <div class="caption">
+                  <span class="title">
+                    <h3>Arachne Homepage</h3>
+                  </span>
+                  <p>A dark, atmospheric fan site inspired by the world of Marathon (Bungie)</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://euripidec.github.io/Number-Guesser/" target="_blank">
+              <div class="card item-3 hidden">
+                <img src="./images/NumberGuesser.png" />
+                <div class="caption">
+                  <span class="title">
+                    <h3>Number Guesser</h3>
+                  </span>
+                  <p>A browser-based guessing game</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/Euripidec/Credit-card-checker" target="_blank">
+              <div class="card item-4 hidden">
+                <img src="./images/credit card checker.webp" />
+                <div class="caption">
+                  <span class="title">
+                    <h3>CC Cheker</h3>
+                  </span>
+                  <p>A JavaScript program that validates credit card numbers</p>
+                </div>
+              </div>
+            </a>
         </div>
       </section>
       <!-- ===== FAQ ===== -->
-      <section class="faq section">
-        <h1 class="header">
+      <section class="faq section hidden">
+        <h1 class="header" id="faq">
           Frequently <br />Asked<span class="hero"> Questions</span>
         </h1>
-        <div class="q-containter">
-          <div class="q-card">
-            <h5>How long have you actually been coding for?</h5>
-            <img src="./images/Cheveron.png" />
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h5>How long have you actually been coding for?</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              Acutally I would say that I've been coding on and off ever since I
+              was 10 really. <br />
+              Even had my hands on a Raspberry Pi when they first came out.
+            </div>
           </div>
-          <div class="q-card">
-            <h5>What's your design process?</h5>
-            <img src="./images/Cheveron.png" />
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h5>What made you want to code websites specifically?</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              Honeslty web-surfing comprised most of my childhood. <br />
+              I still remember to this day all the cool websites I visited
+              daily. <br />
+              Now however all the magic of early web 2.0 is gone. <br />
+              There's still the indie web so I mainly code websites just for
+              that lol
+            </div>
           </div>
-          <div class="q-card">
-            <h5>Do you only know how to do websites?</h5>
-            <img src="./images/Cheveron.png" />
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h5>What's your process in codeing websites?</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
+                />
+              </svg>
+            </div>
+            <div class="accordion-content">
+              Just put on some ambient jungle and vibe really lol. If I dont
+              have a design sheet <br />or anything else to guide my process, I
+              really just code what looks cool. <br />
+              I also use minimal AI especially with my code directly, I only
+              ever use it for <br />troubleshooting and even then, thats after I
+              exhausted stackoverflow
+            </div>
           </div>
-          <div class="q-card">
-            <h5>What operating system to do you use?</h5>
-            <img src="./images/Cheveron.png" />
-          </div>
-          <div class="q-card">
-            <h5>What's your favourite anime?</h5>
-            <img src="./images/Cheveron.png" />
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h5>What's your favorite anime?</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
+                />
+              </svg>
+            </div>
+
+            <div class="accordion-content">
+              I mean if it isn't obvious from the quotes, It's Fooly Cooly.
+              <br />
+              But my favorite anime genre is mecha Gainax (R.I.P) being my
+              favorite anime studio
+            </div>
           </div>
         </div>
       </section>
       <!-- ===== CONTACT ===== -->
-      <section class="Contact">
-        <div class="contact-card">
-          <div>
-            <h2>Let's <br><span class="hero">collaborate</span></h2>
-            <img src="./images/Arrow.png" />
-          </div>
-          <p>
-            Unlock the potential of your product with expert design and
-            development servies. Let's collaborate to create user-centered
-            solutions that not onyl meet your goals but also delight your users.
-          </p>
-        </div>
+      <section class="Contact hidden">
+        <a href="contact.html"
+          ><div class="contact-card hidden">
+            <div>
+              <h2>Let's <br /><span class="hero">collaborate</span></h2>
+              <div class="arrow-wrap">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e3e3e3"
+                >
+                  <path
+                    d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p>
+              Unlock the power of cutting-edge design and development, where
+              every pixel and line of code is crafted with purpose. Let's build
+              seamless, user-centered experiences that don't just meet your
+              vision — they exceed it!
+            </p>
+          </div></a
+        >
       </section>
     </main>
   </div>
