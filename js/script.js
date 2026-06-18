@@ -12,6 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el))
 
+
 // Slides
 const slides = document.querySelectorAll('.slides .quote-card')
 let slideIndex = 0;
