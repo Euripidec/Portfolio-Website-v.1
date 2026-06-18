@@ -760,6 +760,10 @@ nav img {
 
 /* ===== CONTACT2 ===== */
 
+.contact-me {
+    width: 100%;
+}
+
 form {
     background-color:rgb(39, 40, 41) ;
     display: flex;
@@ -788,7 +792,7 @@ label {
 }
 
 textarea {
-    width: 680px;
+    width: 100%;
     height: 136px;
     padding: 12px;
     border-radius: 10px;
@@ -960,7 +964,7 @@ footer {
         gap: 2rem;
     }
  
-    .project-grid {
+    .container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
@@ -1077,7 +1081,7 @@ footer {
     }
  
     /* Projects & Blog grid */
-    .project-grid {
+    .container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
@@ -1146,6 +1150,7 @@ footer {
     .toolsntech h1 {
         font-size: 1.875rem;
         text-align: center;
+        
     }
 
     .portrait .button {
