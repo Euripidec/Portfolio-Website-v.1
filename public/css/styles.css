@@ -667,6 +667,17 @@ nav img {
     }
 
 
+
+    #sparkle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 998; /* Keeps the sparkles on top of all text and cards */
+}
+
 /* ===== FAQ ===== */
 
 .accordion{

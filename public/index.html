@@ -7,11 +7,13 @@
     rel="stylesheet"
   />
   <script defer src="./js/script.js"></script>
+  <script defer src="./js/cursor.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <canvas id="sparkle-canvas"></canvas>
   <!-- ===== NAVBAR ===== -->
   <nav class="drop-in">
     <ul>
@@ -81,7 +83,7 @@
             </ul>
           </div>
         </div>
-        <a href="contact.html" class="button">Let's Talk !</a>
+        <a href="./downloadables/Euripide_Carpio_Resume.pdf" class="button" download="Euripide_Carpio_Resume" target="_blank">Get My Résumé!</a>
       </div>
     </div>
 
@@ -89,7 +91,7 @@
       <!-- ===== ABOUT ME ===== -->
       <section class="about-me section">
         <h1 id="about-me" class="drop-in">
-          Codeing the Future, One Line at a <span class="hero">Time</span>
+          <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=68&duration=1500&pause=700&color=FFFFFF&multiline=true&repeat=false&width=640&height=182&lines=Coding+the+Future;One+Line+at+a+Time" alt="Typing SVG" /></a>
         </h1>
         <p class="drop-in-2">
           Embark on a transformative journey through captivating digital realms
@@ -339,65 +341,22 @@
       </section>
       <!-- ===== BLOG ===== -->
       <section class="blog section hidden">
-        <h1 class="header" id="blog">
-          Thoughts <br />
-          & <span class="hero">Ideas</span>
-        </h1>
-        <div class="container">
-          <a href="./articles/blog-web-eras.html">
-              <div class="card item-1 hidden">
-                <img src="./images/Web Eras.png" />
-                <div class="caption">
-                  <span class="title">
-                    <h3>Web Eras</h3>
-                  </span>
-                  <p>From Static Pages to Social Feeds</p>
-                </div>
-              </div>
-            </a>
-            <a href="./articles/blog-indie-web.html">
-              <div class="card item-2 hidden">
-                <img src="./images/Indie Web.jpg" />
-                <div class="caption">
-                  <span class="title">
-                    <h3>The Indie Web</h3>
-                  </span>
-                  <p> Before the algorithm and before the platform</p>
-                </div>
-              </div>
-            </a>
-            <a href="./articles/blog-ai-and-developers.html">
-              <div class="card item-3 hidden">
-                <img src="./images/AIvDevel.webp" />
-                <div class="caption">
-                  <span class="title">
-                    <h3>Ai and Developers</h3>
-                  </span>
-                  <p>Is AI comming for my job?</p>
-                </div>
-              </div>
-            </a>
-            <a href="./articles/blog-gainax.html">
-              <div class="card item-4 hidden">
-                <img src="./images/GAINAX.webp" />
-                <div class="caption">
-                  <span class="title">
-                    <h3>The Legacy of Gainax</h3>
-                  </span>
-                  <p>Anime made through hardwork and guts!</p>
-                </div>
-              </div>
-            </a>
-        </div>
-        <div class="all-blogs-box">
+  <h1 class="header" id="blog">
+    Thoughts <br />
+    & <span class="hero">Ideas</span>
+  </h1>
+  <div class="container">
+    <!-- Cards are injected here by js/blogs.js -->
+  </div>
+
+   <div class="all-blogs-box">
           <div class="all-blogs"> 
           <a href="./articles/all-blogs.html" id="allblogs-link">
          All Blogs<span class="arrow">→</span>
         </a>
       </div>
         </div>
-        
-      </section>
+</section>
       <!-- ===== FAQ ===== -->
       <section class="faq section hidden">
         <h1 class="header" id="faq">
@@ -530,4 +489,5 @@
     </main>
   </div>
   <footer>Designed and Developed by Euripide Carpio Fajardo</footer>
+  
 </body>
