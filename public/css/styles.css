@@ -430,6 +430,48 @@ nav img {
     color: inherit;
 }
 
+.all-blogs-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 41rem;margin-top: 1.25rem;
+}
+
+#allblogs-link {
+    font-family: 'Orbitron';
+    color: #9a9a9a ;
+    font-size: 0.75rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    transition: color 0.5s ease;
+}
+
+.arrow {
+    transition: transform 0.5s ease;
+}
+
+#allblogs-link:hover {
+    color: #FF1A1A;
+}
+
+#allblogs-link:hover .arrow {
+    transform: translateX(50%);
+    
+}
+
+.sources {
+    text-decoration: none;
+    color: #9a9a9a;
+    transition: color 0.5s ease;
+}
+
+.sources:hover {
+    color: #FF1A1A;
+}
+
+
 /* ===== QUOTES ===== */
 
 .quote-card {
@@ -581,7 +623,7 @@ nav img {
       width: fit-content;
     }
 
-    .back-link {
+    #back-link {
       font-family: 'Orbitron';
       font-size: 0.75rem;
       color: #9a9a9a;
@@ -593,6 +635,16 @@ nav img {
       width: fit-content;
     }
 
+
+#back-arrow {
+    transition: transform 0.5s ease;
+}
+
+
+#back-link:hover #back-arrow {
+    transform: translateX(-5%);
+    
+}
     .callout {
       background-color: rgb(39, 40, 41);
       border-left: 3px solid #FF1A1A;
@@ -605,7 +657,7 @@ nav img {
       font-style: italic;
     }
 
-    .back-link:hover {
+    #back-link:hover {
       color: #FF1A1A;
     }
 
