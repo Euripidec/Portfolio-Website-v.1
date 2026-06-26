@@ -10,7 +10,6 @@
 
 body{
     background-image: url(../images/nnnoise.svg);
-    opacity: 0.8;
     background-color: rgb(16, 17, 18);
     color: white;
     display: flex;
